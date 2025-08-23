@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+.env
+.env.*
+.cache/
+.ipynb_checkpoints/
+
+# Data
+data_ingest/processed/
+data_ingest/embeddings/
+qdrant_storage/
+chroma/
+*.db
+*.sqlite
+
+# OS
+.DS_Store
+
+# Logs
+logs/
+*.log

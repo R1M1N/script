@@ -1,0 +1,822 @@
+[
+  {
+    "video_id": "L9RNTGcFbUg",
+    "title": "Fine-Tune YOLO for Traffic Flow Counting",
+    "url": "https://www.youtube.com/watch?v=L9RNTGcFbUg"
+  },
+  {
+    "video_id": "fsYoIE9Txmc",
+    "title": "Using YOLO for 3D Cuboid Detection",
+    "url": "https://www.youtube.com/watch?v=fsYoIE9Txmc"
+  },
+  {
+    "video_id": "j9cO9HvDYrY",
+    "title": "Top Award-Winning Research at CVPR 2025",
+    "url": "https://www.youtube.com/watch?v=j9cO9HvDYrY"
+  },
+  {
+    "video_id": "fFjIkRte5R8",
+    "title": "Fine-Tune YOLO for Automated Product Counting",
+    "url": "https://www.youtube.com/watch?v=fFjIkRte5R8"
+  },
+  {
+    "video_id": "NIGLTumGF5o",
+    "title": "Fine-Tune Yolo for Football analytics",
+    "url": "https://www.youtube.com/watch?v=NIGLTumGF5o"
+  },
+  {
+    "video_id": "kwQeokYDVcE",
+    "title": "Build a Real-Time Intrusion Detection System with YOLO",
+    "url": "https://www.youtube.com/watch?v=kwQeokYDVcE"
+  },
+  {
+    "video_id": "3qKqttdwxnM",
+    "title": "Fine-Tune YOLO for Product Recognition in Retail Checkout",
+    "url": "https://www.youtube.com/watch?v=3qKqttdwxnM"
+  },
+  {
+    "video_id": "Mzk8ynEibGs",
+    "title": "Fine-Tune YOLO for Emergency Vehicle Detection | CV in Vehicles & Traffic Monitoring",
+    "url": "https://www.youtube.com/watch?v=Mzk8ynEibGs"
+  },
+  {
+    "video_id": "xJJindw3X-Q",
+    "title": "Stop Wasting Hours Searching Images - This Filter Feature Does It in Seconds!",
+    "url": "https://www.youtube.com/watch?v=xJJindw3X-Q"
+  },
+  {
+    "video_id": "Q2-ZH9w3bgo",
+    "title": "Fine-Tune YOLO FOR PPE Detection | CV in Manufacturing",
+    "url": "https://www.youtube.com/watch?v=Q2-ZH9w3bgo"
+  },
+  {
+    "video_id": "BTWXAm3DFmQ",
+    "title": "KOSMOS-2 Tutorial: Microsoft's AI That Points to Objects in Images!",
+    "url": "https://www.youtube.com/watch?v=BTWXAm3DFmQ"
+  },
+  {
+    "video_id": "ajDb1Obtwmg",
+    "title": "BLIP Explained: A Unified Vision Language Model",
+    "url": "https://www.youtube.com/watch?v=ajDb1Obtwmg"
+  },
+  {
+    "video_id": "bORBNxLLTC0",
+    "title": "Real-Time Object Tracking with OC-SORT",
+    "url": "https://www.youtube.com/watch?v=bORBNxLLTC0"
+  },
+  {
+    "video_id": "O6WVrS-apN4",
+    "title": "Search Images Instantly Using Natural Language | Labellerr’s Natural Language Search Explained",
+    "url": "https://www.youtube.com/watch?v=O6WVrS-apN4"
+  },
+  {
+    "video_id": "hlcFdiuz_HI",
+    "title": "How I Fixed My Biggest Annotation Nightmare with Labellerr | Industrial AI for Greyscale Images",
+    "url": "https://www.youtube.com/watch?v=hlcFdiuz_HI"
+  },
+  {
+    "video_id": "nFQj6Qdxbus",
+    "title": "Why BoT-SORT is #1 on MOTChallenge: Better Associations, Fewer ID Switches?",
+    "url": "https://www.youtube.com/watch?v=nFQj6Qdxbus"
+  },
+  {
+    "video_id": "MWi3BaAdw4g",
+    "title": "DeepSORT Object Tracking Explained",
+    "url": "https://www.youtube.com/watch?v=MWi3BaAdw4g"
+  },
+  {
+    "video_id": "64Ncymcfpsk",
+    "title": "Track Crowds in Real-Time with FairMOT",
+    "url": "https://www.youtube.com/watch?v=64Ncymcfpsk"
+  },
+  {
+    "video_id": "hviocgahbpc",
+    "title": "StrongSORT Object Tracking Tutorial with YOLOv7",
+    "url": "https://www.youtube.com/watch?v=hviocgahbpc"
+  },
+  {
+    "video_id": "0gJjJ2P08GE",
+    "title": "ByteTrack Tracking Tutorial: Perform Tracking with YOLO",
+    "url": "https://www.youtube.com/watch?v=0gJjJ2P08GE"
+  },
+  {
+    "video_id": "ZmIRl8FV7SQ",
+    "title": "Getting Started with Labellerr 🚀 | Sign Up, Upload Data & Add Users in Minutes!",
+    "url": "https://www.youtube.com/watch?v=ZmIRl8FV7SQ"
+  },
+  {
+    "video_id": "M67Ormc1ASc",
+    "title": "Track Annotation Quality with Ease! ✅ Introducing Labellerr’s Quality Metrics Dashboard",
+    "url": "https://www.youtube.com/watch?v=M67Ormc1ASc"
+  },
+  {
+    "video_id": "LdbRXYWVyN0",
+    "title": "Explore Your Dataset with Labellerr’s AI: Tags, Descriptions, Object Counts & More!",
+    "url": "https://www.youtube.com/watch?v=LdbRXYWVyN0"
+  },
+  {
+    "video_id": "HBk_hkP6k-I",
+    "title": "MASA + SAM: Track ANY Video Object Without Training (2025)",
+    "url": "https://www.youtube.com/watch?v=HBk_hkP6k-I"
+  },
+  {
+    "video_id": "mVkPXbWxnEg",
+    "title": "Vision Agent Using SAM-Description-Based Object Segmentation Agent | Full-Tutorial",
+    "url": "https://www.youtube.com/watch?v=mVkPXbWxnEg"
+  },
+  {
+    "video_id": "4Emb4j1T6-8",
+    "title": "SAM2 Tutorial 2025: Meta AI's NEW Segment Anything Model 2",
+    "url": "https://www.youtube.com/watch?v=4Emb4j1T6-8"
+  },
+  {
+    "video_id": "L9ae7cvJ7Ow",
+    "title": "Perform All Vision Tasks using Florence 2",
+    "url": "https://www.youtube.com/watch?v=L9ae7cvJ7Ow"
+  },
+  {
+    "video_id": "N-1_rt5kKN0",
+    "title": "SegFormer Tutorial: Master Semantic Segmentation | Step-by-Step Guide",
+    "url": "https://www.youtube.com/watch?v=N-1_rt5kKN0"
+  },
+  {
+    "video_id": "9rnRmx5WQzc",
+    "title": "Mask2Former Tutorial: Complete Guide to all Segmentation",
+    "url": "https://www.youtube.com/watch?v=9rnRmx5WQzc"
+  },
+  {
+    "video_id": "M0duRkrGFEg",
+    "title": "YOLO-NAS Explained: Object Detection with Neural Architecture Search | Comparison with YOLOv8",
+    "url": "https://www.youtube.com/watch?v=M0duRkrGFEg"
+  },
+  {
+    "video_id": "YGTH46dWB20",
+    "title": "Introducing Classification Agent | Labellerr's New Automated Annotation Workflow",
+    "url": "https://www.youtube.com/watch?v=YGTH46dWB20"
+  },
+  {
+    "video_id": "9855PcoFceQ",
+    "title": "RT-DETR vs RT-DETRv2: Full Comparison | Real-Time Object Detection Tutorial",
+    "url": "https://www.youtube.com/watch?v=9855PcoFceQ"
+  },
+  {
+    "video_id": "L0nhtdvu6z0",
+    "title": "YOLOv11 Tutorial: Object Detection, Segmentation, Pose Estimation | Complete Guide for Beginners",
+    "url": "https://www.youtube.com/watch?v=L0nhtdvu6z0"
+  },
+  {
+    "video_id": "O9QX8W9xXJY",
+    "title": "OWLv2: Zero-Shot Vision-Language Model Explained + Hands-on Demo",
+    "url": "https://www.youtube.com/watch?v=O9QX8W9xXJY"
+  },
+  {
+    "video_id": "E82zMbnw37Q",
+    "title": "How AI Detects Threats : Image Annotation With Labellerr",
+    "url": "https://www.youtube.com/watch?v=E82zMbnw37Q"
+  },
+  {
+    "video_id": "lBsC5lgE4A4",
+    "title": "How AI Learns to See: Image Segmentation with Labellerr",
+    "url": "https://www.youtube.com/watch?v=lBsC5lgE4A4"
+  },
+  {
+    "video_id": "ZZhtAJXY-kk",
+    "title": "Why AI Still Struggles with Hands and How labellerr fixes It!",
+    "url": "https://www.youtube.com/watch?v=ZZhtAJXY-kk"
+  },
+  {
+    "video_id": "K_dHbA_Rux4",
+    "title": "Preserving Old/Damaged Photos With Labellerr",
+    "url": "https://www.youtube.com/watch?v=K_dHbA_Rux4"
+  },
+  {
+    "video_id": "it4JT8kQavM",
+    "title": "How to Use Natural Language Search in Labellerr: Find Datasets with Ease!",
+    "url": "https://www.youtube.com/watch?v=it4JT8kQavM"
+  },
+  {
+    "video_id": "99Cr4KuvcvA",
+    "title": "How Computer Vision is Transforming Sports, On and Off The Field",
+    "url": "https://www.youtube.com/watch?v=99Cr4KuvcvA"
+  },
+  {
+    "video_id": "Pj6zxwWpviM",
+    "title": "Boost Retail Success Using Customer Behaviour Analytics",
+    "url": "https://www.youtube.com/watch?v=Pj6zxwWpviM"
+  },
+  {
+    "video_id": "8rFjDaU9sOE",
+    "title": "How Computer Vision is Transforming Healthcare",
+    "url": "https://www.youtube.com/watch?v=8rFjDaU9sOE"
+  },
+  {
+    "video_id": "pBLWOe01QXU",
+    "title": "How to Fine-Tune Yolo on Custom Dataset",
+    "url": "https://www.youtube.com/watch?v=pBLWOe01QXU"
+  },
+  {
+    "video_id": "HjdzbQxQYMQ",
+    "title": "How Computer Vision is Making Its Way In Manufacturing?",
+    "url": "https://www.youtube.com/watch?v=HjdzbQxQYMQ"
+  },
+  {
+    "video_id": "s-kiaeeVbxA",
+    "title": "How Computer Vision is Transforming Agriculture",
+    "url": "https://www.youtube.com/watch?v=s-kiaeeVbxA"
+  },
+  {
+    "video_id": "4E7H5XTdxh8",
+    "title": "The Secret Eyes of Self-Driving Cars | Role of Labellerr in Computer Vision",
+    "url": "https://www.youtube.com/watch?v=4E7H5XTdxh8"
+  },
+  {
+    "video_id": "QIlIg4yHR0Y",
+    "title": "How Labellerr’s GenAI Simplifies Annotation for Images, Videos, Audio & Text",
+    "url": "https://www.youtube.com/watch?v=QIlIg4yHR0Y"
+  },
+  {
+    "video_id": "Fx6s0xRgUNE",
+    "title": "Choosing the Right LLM: The Best AI for Every Task",
+    "url": "https://www.youtube.com/watch?v=Fx6s0xRgUNE"
+  },
+  {
+    "video_id": "U6XImdGgRa4",
+    "title": "Enhance Team Collaboration with Labellerr’s Notification Bar",
+    "url": "https://www.youtube.com/watch?v=U6XImdGgRa4"
+  },
+  {
+    "video_id": "b6pxZZiV9jk",
+    "title": "Gap Filler - Your Solution to Faster Gap Filling",
+    "url": "https://www.youtube.com/watch?v=b6pxZZiV9jk"
+  },
+  {
+    "video_id": "D9JT1IEaGN0",
+    "title": "Effortless Image Annotation with Labellerr’s Polygon Eraser & CLIP Mode",
+    "url": "https://www.youtube.com/watch?v=D9JT1IEaGN0"
+  },
+  {
+    "video_id": "Rqwwnq1GfBU",
+    "title": "MCP - Your Solution to Build an AI Agent",
+    "url": "https://www.youtube.com/watch?v=Rqwwnq1GfBU"
+  },
+  {
+    "video_id": "y3dvDFEfhhU",
+    "title": "Are Vision AI Agents replacing Humans?",
+    "url": "https://www.youtube.com/watch?v=y3dvDFEfhhU"
+  },
+  {
+    "video_id": "iaYX6BCZgG4",
+    "title": "How Labellerr provided personalized Solution I Jordan, Senior AI Software Engineer At Spot AI",
+    "url": "https://www.youtube.com/watch?v=iaYX6BCZgG4"
+  },
+  {
+    "video_id": "pFZUIHf8I0I",
+    "title": "Boost Barcode Accuracy with Labellerr’s AI",
+    "url": "https://www.youtube.com/watch?v=pFZUIHf8I0I"
+  },
+  {
+    "video_id": "pY_o4EvYMz8",
+    "title": "Boost AI Image Annotation 10X with Labellerr’s CLIP Mode",
+    "url": "https://www.youtube.com/watch?v=pY_o4EvYMz8"
+  },
+  {
+    "video_id": "EviGR_XMTfQ",
+    "title": "Enhancing Annotation with Classification Feature",
+    "url": "https://www.youtube.com/watch?v=EviGR_XMTfQ"
+  },
+  {
+    "video_id": "5Do6wvpANlU",
+    "title": "Boost Video Annotation with Labellerr’s Attribute Tool",
+    "url": "https://www.youtube.com/watch?v=5Do6wvpANlU"
+  },
+  {
+    "video_id": "qR7HeVluz-g",
+    "title": "AI-Powered Home Service Annotation with Labellerr",
+    "url": "https://www.youtube.com/watch?v=qR7HeVluz-g"
+  },
+  {
+    "video_id": "nw4GTygX3Jc",
+    "title": "One-Click AI Wound Detection with Labellerr’s SAM: Recover Fast",
+    "url": "https://www.youtube.com/watch?v=nw4GTygX3Jc"
+  },
+  {
+    "video_id": "YTpBxQ9wQN8",
+    "title": "AI-Powered Fruit Disease Segmentation with Labellerr’s Tool",
+    "url": "https://www.youtube.com/watch?v=YTpBxQ9wQN8"
+  },
+  {
+    "video_id": "1VZy1Z2QoMY",
+    "title": "Spot Animal Diseases Fast with AI-Powered Labellerr Tool",
+    "url": "https://www.youtube.com/watch?v=1VZy1Z2QoMY"
+  },
+  {
+    "video_id": "iz0RMdYTJ8M",
+    "title": "Boost Food Grain Segmentation Efficiency with AI-Powered Labellerr",
+    "url": "https://www.youtube.com/watch?v=iz0RMdYTJ8M"
+  },
+  {
+    "video_id": "ALR3HYwQP2o",
+    "title": "Revolutionizing Healthcare: Manual vs. Automated of Scans with Labellerr",
+    "url": "https://www.youtube.com/watch?v=ALR3HYwQP2o"
+  },
+  {
+    "video_id": "dfSI8zZjaoM",
+    "title": "Revolutionizing Sports Annotation: Manual vs. Automated Player Segmentation with Labellerr",
+    "url": "https://www.youtube.com/watch?v=dfSI8zZjaoM"
+  },
+  {
+    "video_id": "8T6eyuylFw0",
+    "title": "How Vehicle Damage Annotation Speeds Up Insurance Claims — Manual vs Automated Labeling",
+    "url": "https://www.youtube.com/watch?v=8T6eyuylFw0"
+  },
+  {
+    "video_id": "wsc0vBaOyBE",
+    "title": "Effortless Waste Segmentation Annotation with Labellerr",
+    "url": "https://www.youtube.com/watch?v=wsc0vBaOyBE"
+  },
+  {
+    "video_id": "gBAtATndxpw",
+    "title": "Revolutionizing Environmental Monitoring: Manual vs. Automated Land Cover Segmentation",
+    "url": "https://www.youtube.com/watch?v=gBAtATndxpw"
+  },
+  {
+    "video_id": "OkeYnngGLmY",
+    "title": "How Self-Driving Cars Use Road Annotations — Manual vs Automated Labeling with Labellerr",
+    "url": "https://www.youtube.com/watch?v=OkeYnngGLmY"
+  },
+  {
+    "video_id": "47WGJJu_XQU",
+    "title": "Master Event Tagging with Labellerr: Effortlessly Organize & Analyze Video Content",
+    "url": "https://www.youtube.com/watch?v=47WGJJu_XQU"
+  },
+  {
+    "video_id": "co70NzWpr74",
+    "title": "Faster precised Image Annotation using Labellerr's Magic Editor",
+    "url": "https://www.youtube.com/watch?v=co70NzWpr74"
+  },
+  {
+    "video_id": "ixbl7lT_Jo4",
+    "title": "What Are AI Agents? A 6-Minute Guide to Their Power and Potential.",
+    "url": "https://www.youtube.com/watch?v=ixbl7lT_Jo4"
+  },
+  {
+    "video_id": "rpmKDXfn6dg",
+    "title": "Get Annotations 10x Faster for Name Entity Recognition, Classification, Text Summarization & More",
+    "url": "https://www.youtube.com/watch?v=rpmKDXfn6dg"
+  },
+  {
+    "video_id": "3wyvMvg1u1g",
+    "title": "Label 10x Faster: All-in-One Image Annotation Tool for Agriculture, Robotics & Surveillance",
+    "url": "https://www.youtube.com/watch?v=3wyvMvg1u1g"
+  },
+  {
+    "video_id": "87m3L22J1aM",
+    "title": "How Data Annotation Enhances Retail AI Performance",
+    "url": "https://www.youtube.com/watch?v=87m3L22J1aM"
+  },
+  {
+    "video_id": "vTyl2syis28",
+    "title": "Why AI Teams Are Switching from Open-Source Annotation Tools",
+    "url": "https://www.youtube.com/watch?v=vTyl2syis28"
+  },
+  {
+    "video_id": "TyxP59p65WY",
+    "title": "How Oishii Revolutionized Automated Harvesting with Labellerr…",
+    "url": "https://www.youtube.com/watch?v=TyxP59p65WY"
+  },
+  {
+    "video_id": "gOeu5hjzuew",
+    "title": "Speed Up AI Training with SAM 2 for Quick Video Annotation | Sports, Robotics & Security",
+    "url": "https://www.youtube.com/watch?v=gOeu5hjzuew"
+  },
+  {
+    "video_id": "HG7HjcpsxGs",
+    "title": "Track Objects 10x Faster in Videos with Labellerr’s SAM 2 Annotation Tool",
+    "url": "https://www.youtube.com/watch?v=HG7HjcpsxGs"
+  },
+  {
+    "video_id": "6aMl9759er8",
+    "title": "Annotate Audio 5x Faster with Labellerr’s Tool | Audio Annotation, Transcription, speech Agent",
+    "url": "https://www.youtube.com/watch?v=6aMl9759er8"
+  },
+  {
+    "video_id": "G9TM8hvgVk4",
+    "title": "Introducing Label GPT: Revolutionize Data Annotation and Accelerate Your Vision AI Projects",
+    "url": "https://www.youtube.com/watch?v=G9TM8hvgVk4"
+  },
+  {
+    "video_id": "O0q_5sUMncI",
+    "title": "Annotate 10,000+ Images 10x Faster with Labellerr’s SAM & Negative Prompt Tool",
+    "url": "https://www.youtube.com/watch?v=O0q_5sUMncI"
+  },
+  {
+    "video_id": "PZSbnSm8lc4",
+    "title": "Annotate Video Objects with Labellerr’s Bounding Box Tool Easily",
+    "url": "https://www.youtube.com/watch?v=PZSbnSm8lc4"
+  },
+  {
+    "video_id": "mQNQl1Ph7Dg",
+    "title": "How to Easily Remove Objects In Seconds Using Labellerr's Magic Eraser",
+    "url": "https://www.youtube.com/watch?v=mQNQl1Ph7Dg"
+  },
+  {
+    "video_id": "p385gRkV6EM",
+    "title": "How Labellerr Scaled Our Image Annotation Operations – Eric, Senior Scientist at Foss #Startup",
+    "url": "https://www.youtube.com/watch?v=p385gRkV6EM"
+  },
+  {
+    "video_id": "lAYu-ewIhTE",
+    "title": "Boost Data Annotation Accuracy and Efficiency with Labellerr's Active Learning Feature",
+    "url": "https://www.youtube.com/watch?v=lAYu-ewIhTE"
+  },
+  {
+    "video_id": "kysWjXMVS5E",
+    "title": "Labellerr AI Data Podcast: Garbage In, Garbage Out to Insights ft. Simon, Strategy Director @ IB",
+    "url": "https://www.youtube.com/watch?v=kysWjXMVS5E"
+  },
+  {
+    "video_id": "C5yaKfX9xPs",
+    "title": "How Labellerr Transformed Image Annotation Scalability: Insights from Eric, Senior Scientist at Foss",
+    "url": "https://www.youtube.com/watch?v=C5yaKfX9xPs"
+  },
+  {
+    "video_id": "a-mowTUI2Xg",
+    "title": "AI Career Advice for Aspiring Data Scientists | Masters or Industry?",
+    "url": "https://www.youtube.com/watch?v=a-mowTUI2Xg"
+  },
+  {
+    "video_id": "N6zBdztpgFA",
+    "title": "Top Object Annotation Services | AI-Powered Labeling Tools - Labellerr",
+    "url": "https://www.youtube.com/watch?v=N6zBdztpgFA"
+  },
+  {
+    "video_id": "7-TG11HJhh0",
+    "title": "Revolutionize Your AI with the Best Data Annotation Services | Labellerr",
+    "url": "https://www.youtube.com/watch?v=7-TG11HJhh0"
+  },
+  {
+    "video_id": "NozKRfucqU4",
+    "title": "Garbage In Garbage Out Podcast | Labellerr: Your AI Powered Data Labeling Platform",
+    "url": "https://www.youtube.com/watch?v=NozKRfucqU4"
+  },
+  {
+    "video_id": "dxGzQm1YFNo",
+    "title": "AI Data Labeling Tool - Automate Annotation & Boost Efficiency with LabelGPT | Labellerr",
+    "url": "https://www.youtube.com/watch?v=dxGzQm1YFNo"
+  },
+  {
+    "video_id": "4lRRL3h8zUU",
+    "title": "Labellerr Transforms Months of Work into Weeks: Tyler, CEO of Butterfly Positronics",
+    "url": "https://www.youtube.com/watch?v=4lRRL3h8zUU"
+  },
+  {
+    "video_id": "wKeBO7zEUn0",
+    "title": "Streamline Data Annotation with Labeler’s Auto-Labeling Features | Labellerr",
+    "url": "https://www.youtube.com/watch?v=wKeBO7zEUn0"
+  },
+  {
+    "video_id": "h1V5Ky8gpaA",
+    "title": "Enhance Accuracy with Advanced Image Display Settings | Labellerr",
+    "url": "https://www.youtube.com/watch?v=h1V5Ky8gpaA"
+  },
+  {
+    "video_id": "ZanWDWgzHJ8",
+    "title": "Pixel-Perfect Data Annotation with Segment Anything Model | Labellerr",
+    "url": "https://www.youtube.com/watch?v=ZanWDWgzHJ8"
+  },
+  {
+    "video_id": "H4FGoiJfkvM",
+    "title": "Labellerr AI Data Podcast: Data-Driven Strategies with Mathangi Sri, Chief Data Scientist at YUBI",
+    "url": "https://www.youtube.com/watch?v=H4FGoiJfkvM"
+  },
+  {
+    "video_id": "LSAfAFgYdyg",
+    "title": "Healthcare AI Insights: Navigating Machine Learning in Medical Imaging | Labellerr",
+    "url": "https://www.youtube.com/watch?v=LSAfAFgYdyg"
+  },
+  {
+    "video_id": "tTXWd9O5vR0",
+    "title": "Effortless Annotation with Auto Labeling APIs: LabelGPT & AWS Recognition | Labellerr",
+    "url": "https://www.youtube.com/watch?v=tTXWd9O5vR0"
+  },
+  {
+    "video_id": "ua7El0LOcmA",
+    "title": "Effortless Text Annotation with Interactive Review Features | Labellerr",
+    "url": "https://www.youtube.com/watch?v=ua7El0LOcmA"
+  },
+  {
+    "video_id": "43FF6t3XwM4",
+    "title": "Export Annotated Data Effortlessly with Multiple Formats | Labellerr",
+    "url": "https://www.youtube.com/watch?v=43FF6t3XwM4"
+  },
+  {
+    "video_id": "mL6pgBX0gaI",
+    "title": "Streamline Annotation Review with Grid and Stat Views | Labellerr",
+    "url": "https://www.youtube.com/watch?v=mL6pgBX0gaI"
+  },
+  {
+    "video_id": "6NAm5fBmu6g",
+    "title": "Effortless Selective File Annotation for Streamlined Reviews | Labellerr",
+    "url": "https://www.youtube.com/watch?v=6NAm5fBmu6g"
+  },
+  {
+    "video_id": "kyhsPSAB9z4",
+    "title": "Annotate Overlapping Objects with Transparency Control | Labellerr",
+    "url": "https://www.youtube.com/watch?v=kyhsPSAB9z4"
+  },
+  {
+    "video_id": "VWP0om1k_qw",
+    "title": "Annotate Objects with Precision Using Attribute-Based Labels | Labellerr",
+    "url": "https://www.youtube.com/watch?v=VWP0om1k_qw"
+  },
+  {
+    "video_id": "ErYWoML8DfM",
+    "title": "Effortless Text Categorization with Color-Coded Annotations | Labellerr",
+    "url": "https://www.youtube.com/watch?v=ErYWoML8DfM"
+  },
+  {
+    "video_id": "JPhDXrh5v94",
+    "title": "Monitor Annotation Quality with Real-Time Error Rate Metrics | Labellerr",
+    "url": "https://www.youtube.com/watch?v=JPhDXrh5v94"
+  },
+  {
+    "video_id": "tqM7V_hEHck",
+    "title": "Enhance Annotation Quality with Remark-Based File Search | Labellerr",
+    "url": "https://www.youtube.com/watch?v=tqM7V_hEHck"
+  },
+  {
+    "video_id": "22dxf-u8HiE",
+    "title": "Achieve Annotation Consensus with Remarks on Annotations | Labellerr",
+    "url": "https://www.youtube.com/watch?v=22dxf-u8HiE"
+  },
+  {
+    "video_id": "6_GgufO9uSE",
+    "title": "User Activity Tracking and Velocity Insights for Annotation Performance | Labellerr",
+    "url": "https://www.youtube.com/watch?v=6_GgufO9uSE"
+  },
+  {
+    "video_id": "6eDOEhcS9wM",
+    "title": "Optimize Annotation Processes with Labeling Trends and Label Distribution | Labellerr",
+    "url": "https://www.youtube.com/watch?v=6eDOEhcS9wM"
+  },
+  {
+    "video_id": "p0XdjxBKqF8",
+    "title": "How Labellerr Helped Spare-It Succeed: A Testimonial by Laurent Meunier, Co-founder & CTO",
+    "url": "https://www.youtube.com/watch?v=p0XdjxBKqF8"
+  },
+  {
+    "video_id": "0Ilo_MsI6AQ",
+    "title": "LabelGPT: The Ultimate Auto Annotation Tool",
+    "url": "https://www.youtube.com/watch?v=0Ilo_MsI6AQ"
+  },
+  {
+    "video_id": "uoKE3GgF1vo",
+    "title": "Discover the Power of Large Language Models (LLMs) | Labellerr",
+    "url": "https://www.youtube.com/watch?v=uoKE3GgF1vo"
+  },
+  {
+    "video_id": "MTkyxzGGjNM",
+    "title": "YOLO V8 Object Detection Model - Advanced Features | Labellerr",
+    "url": "https://www.youtube.com/watch?v=MTkyxzGGjNM"
+  },
+  {
+    "video_id": "U2yp2PYNGtg",
+    "title": "Explore DINO Self-Supervised Learning Model: Revolutionizing AI Training on Unlabeled Data",
+    "url": "https://www.youtube.com/watch?v=U2yp2PYNGtg"
+  },
+  {
+    "video_id": "ItL0iwOOgg0",
+    "title": "AI Model Training Stages: From Data Collection to Testing",
+    "url": "https://www.youtube.com/watch?v=ItL0iwOOgg0"
+  },
+  {
+    "video_id": "jdvTKnd-Lq4",
+    "title": "Top 7 Automotive Datasets for Computer Vision Projects",
+    "url": "https://www.youtube.com/watch?v=jdvTKnd-Lq4"
+  },
+  {
+    "video_id": "ZHHVrqrKV6s",
+    "title": "Unleash the Power of AI with Labellerr | Best Data Annotation Services",
+    "url": "https://www.youtube.com/watch?v=ZHHVrqrKV6s"
+  },
+  {
+    "video_id": "sZHZQRmBjrc",
+    "title": "Streamline AI Model Training with Labellerr | Best Data Annotation Services",
+    "url": "https://www.youtube.com/watch?v=sZHZQRmBjrc"
+  },
+  {
+    "video_id": "UDXrbeuWa4U",
+    "title": "Explore Dino Self-Supervised Learning Model with Labellerr | Data Annotation Simplified",
+    "url": "https://www.youtube.com/watch?v=UDXrbeuWa4U"
+  },
+  {
+    "video_id": "wE2lxss_m_U",
+    "title": "LabelGPT: Turns raw images into labeled images in minutes",
+    "url": "https://www.youtube.com/watch?v=wE2lxss_m_U"
+  },
+  {
+    "video_id": "EkpbGa4sfxQ",
+    "title": "Labellerr: Unleash the power of automation in training data generation pipeline (DIY Sandbox)",
+    "url": "https://www.youtube.com/watch?v=EkpbGa4sfxQ"
+  },
+  {
+    "video_id": "Z5YdaJxHhbo",
+    "title": "Labellerr Feature demo 4: Copy Previous file to speed up classification annotation",
+    "url": "https://www.youtube.com/watch?v=Z5YdaJxHhbo"
+  },
+  {
+    "video_id": "4g6PqmzLuuc",
+    "title": "Labellerr Feature Demo 3: Autolabel",
+    "url": "https://www.youtube.com/watch?v=4g6PqmzLuuc"
+  },
+  {
+    "video_id": "XAgIEFXDAcw",
+    "title": "Labellerr feture demo 2: Quick Review",
+    "url": "https://www.youtube.com/watch?v=XAgIEFXDAcw"
+  },
+  {
+    "video_id": "KwX69aT1RJ0",
+    "title": "Labellerr Feature demo 1: Search filters for files",
+    "url": "https://www.youtube.com/watch?v=KwX69aT1RJ0"
+  },
+  {
+    "video_id": "3gc4MhHx_6E",
+    "title": "Smartest Training Data Platform: Labellerr",
+    "url": "https://www.youtube.com/watch?v=3gc4MhHx_6E"
+  },
+  {
+    "video_id": "lt0AakQ3AI4",
+    "title": "Labellerr Podcast: Insights from Soma Dhavala on Responsible AI | Best Data Labeling Tools",
+    "url": "https://www.youtube.com/watch?v=lt0AakQ3AI4"
+  },
+  {
+    "video_id": "QDKRWTC1l2I",
+    "title": "Labellerr Podcast: AI Innovation and Challenges ft. VirooPax Mirji, VP AI at WinWire",
+    "url": "https://www.youtube.com/watch?v=QDKRWTC1l2I"
+  },
+  {
+    "video_id": "X1_CnBc8Ri8",
+    "title": "Labellerr Podcast: AI & Geospatial Innovation Insights with Jamie Conklin, VP Product at Astraea",
+    "url": "https://www.youtube.com/watch?v=X1_CnBc8Ri8"
+  },
+  {
+    "video_id": "VoUTrEm4efI",
+    "title": "Labellerr Podcast: Insights from AI Expert Leonard Apeltsin, Director of Data Science at Anomaly",
+    "url": "https://www.youtube.com/watch?v=VoUTrEm4efI"
+  },
+  {
+    "video_id": "PigDjSpyPcA",
+    "title": "Labellerr Podcast: George Williams on Challenges in AI-Driven Chip & Microprocessor Design",
+    "url": "https://www.youtube.com/watch?v=PigDjSpyPcA"
+  },
+  {
+    "video_id": "oZEwYe8qj98",
+    "title": "Labellerr Podcast: Peeyush Rai on Scaling AI, Data Annotation Solutions & Transforming Enterprises",
+    "url": "https://www.youtube.com/watch?v=oZEwYe8qj98"
+  },
+  {
+    "video_id": "zoP7kDubCN0",
+    "title": "Labellerr Podcast: Jagadish Venkataraman on AI's Role in Healthcare, Geolocation & Medical Imaging",
+    "url": "https://www.youtube.com/watch?v=zoP7kDubCN0"
+  },
+  {
+    "video_id": "ryyUSvukAtg",
+    "title": "Track Safety project: Project setup and Image annotation on Labellerr platform",
+    "url": "https://www.youtube.com/watch?v=ryyUSvukAtg"
+  },
+  {
+    "video_id": "MefAt81_-Uk",
+    "title": "Image Annotation for Hard Hat Object Detection: Demo Walkthrough Video",
+    "url": "https://www.youtube.com/watch?v=MefAt81_-Uk"
+  },
+  {
+    "video_id": "FNfmaQkUw14",
+    "title": "Data Annotation for fitness AI model training: pose estimation",
+    "url": "https://www.youtube.com/watch?v=FNfmaQkUw14"
+  },
+  {
+    "video_id": "vk_Le1l3n8g",
+    "title": "How Conversational AI and IOT are Redefining the Future of Smart Homes",
+    "url": "https://www.youtube.com/watch?v=vk_Le1l3n8g"
+  },
+  {
+    "video_id": "nXyUnV--MQs",
+    "title": "Text Annotation for Named Entity Recognition using Labellerr - An AI based Data Annotation Platform",
+    "url": "https://www.youtube.com/watch?v=nXyUnV--MQs"
+  },
+  {
+    "video_id": "TA8SsOiO66Y",
+    "title": "Intelligent Document Processing Automation with Data Annotation bounding box, OCR",
+    "url": "https://www.youtube.com/watch?v=TA8SsOiO66Y"
+  },
+  {
+    "video_id": "CGISJWBd80c",
+    "title": "Revolutionizing entertainment industry with Labellerr, Automated AI & Data Annotation SAAS platform",
+    "url": "https://www.youtube.com/watch?v=CGISJWBd80c"
+  },
+  {
+    "video_id": "a5LWO5EPU4Y",
+    "title": "Labellerr, AI in Retail - Supply Chain Machine Learning Annotation",
+    "url": "https://www.youtube.com/watch?v=a5LWO5EPU4Y"
+  },
+  {
+    "video_id": "HivXwak-B6Q",
+    "title": "Attribute Recognisation by Labeller, Machine Learning Data Annotation Platform, Saas",
+    "url": "https://www.youtube.com/watch?v=HivXwak-B6Q"
+  },
+  {
+    "video_id": "89fr8Up_bM8",
+    "title": "Fashion Parsing - Data Annotation by Labellerr Automated AI and Data Annotation SAAS platform",
+    "url": "https://www.youtube.com/watch?v=89fr8Up_bM8"
+  },
+  {
+    "video_id": "KgFyTT_iNvk",
+    "title": "How to Create a New Image Annotation Project on Labellerr - A Step-by-Step Guide",
+    "url": "https://www.youtube.com/watch?v=KgFyTT_iNvk"
+  },
+  {
+    "video_id": "um3FikXdEf4",
+    "title": "AI Powered Data Annotation to Build Incredible Computer Vision & NLP Applications - Labellerr",
+    "url": "https://www.youtube.com/watch?v=um3FikXdEf4"
+  },
+  {
+    "video_id": "if03NtreFWI",
+    "title": "AI-Powered Data Annotation Services and Project Analytics Dashboard - www.labellerr.com",
+    "url": "https://www.youtube.com/watch?v=if03NtreFWI"
+  },
+  {
+    "video_id": "nUo76jTOls4",
+    "title": "Machine Learning Powered Fashion Data Annotation (Landmark detection in Fashion - Virtual styling)",
+    "url": "https://www.youtube.com/watch?v=nUo76jTOls4"
+  },
+  {
+    "video_id": "NB_a0sw5QEs",
+    "title": "Crubside Pickup Made Efficient with Data Annotation",
+    "url": "https://www.youtube.com/watch?v=NB_a0sw5QEs"
+  },
+  {
+    "video_id": "PHgkCn5PHDk",
+    "title": "Accurate Data Annotation Increases Online Sales",
+    "url": "https://www.youtube.com/watch?v=PHgkCn5PHDk"
+  },
+  {
+    "video_id": "mKg39CkCaFk",
+    "title": "Walmart Use Case with Data Annotation",
+    "url": "https://www.youtube.com/watch?v=mKg39CkCaFk"
+  },
+  {
+    "video_id": "MpF_FxCBFjc",
+    "title": "How Planogram (POG) Compliance can Help Retailers and CPGs Achieve High Sales",
+    "url": "https://www.youtube.com/watch?v=MpF_FxCBFjc"
+  },
+  {
+    "video_id": "4fcED0gPoCU",
+    "title": "An interesting Data Annotation (Labeling) Fact!",
+    "url": "https://www.youtube.com/watch?v=4fcED0gPoCU"
+  },
+  {
+    "video_id": "v9mproCMJ4g",
+    "title": "Bounding Box annotation in a retail use case with Labellerr, automated annotation data platform",
+    "url": "https://www.youtube.com/watch?v=v9mproCMJ4g"
+  },
+  {
+    "video_id": "URZbeXMQHZs",
+    "title": "Create AI Annotation Projects Effortlessly | Labellerr - End-to-End Data Annotation Solution",
+    "url": "https://www.youtube.com/watch?v=URZbeXMQHZs"
+  },
+  {
+    "video_id": "ucuTN2GEMa4",
+    "title": "Understanding RGB with Data Annotation Solutions | Labellerr",
+    "url": "https://www.youtube.com/watch?v=ucuTN2GEMa4"
+  },
+  {
+    "video_id": "7z18QH4lniA",
+    "title": "Labellerr - Data Labelling Platform (B2B SaaS)",
+    "url": "https://www.youtube.com/watch?v=7z18QH4lniA"
+  },
+  {
+    "video_id": "tq-IDLb84OI",
+    "title": "Labeling process on Labellerr",
+    "url": "https://www.youtube.com/watch?v=tq-IDLb84OI"
+  },
+  {
+    "video_id": "CMOvBUBAhOM",
+    "title": "Creating new project and importing data in Labellerr",
+    "url": "https://www.youtube.com/watch?v=CMOvBUBAhOM"
+  },
+  {
+    "video_id": "RlAjRxCi29I",
+    "title": "AI and Deep Learning assisted image classification data annotation and labeling",
+    "url": "https://www.youtube.com/watch?v=RlAjRxCi29I"
+  },
+  {
+    "video_id": "9CE30FjUlao",
+    "title": "Labellerr Demo(www.labellerr.com)",
+    "url": "https://www.youtube.com/watch?v=9CE30FjUlao"
+  },
+  {
+    "video_id": "aTcIRF8eFOQ",
+    "title": "Labellerr Demo(www.labellerr.com)",
+    "url": "https://www.youtube.com/watch?v=aTcIRF8eFOQ"
+  }
+]

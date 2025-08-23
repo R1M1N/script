@@ -1,0 +1,46 @@
+[
+  {
+    "video_id": "L9RNTGcFbUg",
+    "title": "Fine-Tune YOLO for Traffic Flow Counting",
+    "description": "Unlock the power of computer vision with this step-by-step tutorial on Traffic Flow Counting using YOLO. 🚦\n\nIn this video, you'll learn how to:\n\n- Fine-tune YOLO for vehicle detection and traffic analysis\n- Count vehicles across defined regions in live or recorded videos\n- Handle both normal camera and drone aerial traffic footage\n- Annotate datasets and train a custom YOLO model for accurate results\n- Apply traffic counting for smart cities, road safety, congestion monitoring, and delivery optimization",
+    "video_url": "https://www.youtube.com/watch?v=L9RNTGcFbUg",
+    "embed_url": "https://www.youtube.com/embed/L9RNTGcFbUg",
+    "duration": 609,
+    "view_count": 73,
+    "upload_date": "20250819",
+    "uploader": "Labellerr",
+    "tags": [
+      "data annotation",
+      "computer vision",
+      "yolo",
+      "traffic flow",
+      "machine learning",
+      "deep learning"
+    ],
+    "categories": [
+      "Science & Technology"
+    ],
+    "transcript_extracted": false
+  },
+  {
+    "video_id": "ZmIRl8FV7SQ",
+    "title": "Getting Started with Labellerr 🚀 | Sign Up, Upload Data & Add Users in Minutes!",
+    "description": "Hey everyone! 👋 In this quick walkthrough, I'll show you how to get started with Labellerr — from signing in with Google to creating a project, uploading your first dataset, and even inviting users to your team.",
+    "video_url": "https://www.youtube.com/watch?v=ZmIRl8FV7SQ",
+    "embed_url": "https://www.youtube.com/embed/ZmIRl8FV7SQ",
+    "duration": 220,
+    "view_count": 1250,
+    "upload_date": "20250624",
+    "uploader": "Labellerr",
+    "tags": [
+      "data annotation",
+      "labellerr",
+      "machine learning",
+      "tutorial"
+    ],
+    "categories": [
+      "Science & Technology"
+    ],
+    "transcript_extracted": false
+  }
+]
