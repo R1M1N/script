@@ -1,9 +1,11 @@
 {
-  "model_name": "all-mpnet-base-v2",
-  "embedding_dim": 768,
-  "num_chunks": 14883,
-  "embedding_shape": [
-    14883,
-    768
-  ]
+  "total_chunks": 14883,
+  "embedding_model": "all-mpnet-base-v2",
+  "embedding_dimension": 768,
+  "source_distribution": {
+    "documentation": 14636,
+    "youtube": 244,
+    "text": 1,
+    "html": 2
+  }
 }

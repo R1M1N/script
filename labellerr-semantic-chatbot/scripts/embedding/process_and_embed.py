@@ -107,6 +107,96 @@ class DocumentProcessor:
                 all_chunks.extend(chunks)
         
         return all_chunks
+    
+    def process_website_content_json(self, filepath: str) -> List[Dict]:
+        """
+        Accepts flexible shapes like:
+        1) [{"url": "...", "title": "...", "text"/"content"/"html": "...", "sections": [{"heading": "...", "text"/"html": "..."}]}]
+        2) {"pages": [ ...same as above... ]}
+        3) Any entry may carry "page_title", "level"
+        """
+        data = self.load_json(filepath)
+        pages = data.get("pages") if isinstance(data, dict) else data
+        if not isinstance(pages, list):
+            return []
+
+        all_chunks = []
+
+        def extract_text(maybe_html_or_text: str) -> str:
+            if not maybe_html_or_text:
+                return ""
+            # If HTML-like, strip tags
+            if "<" in maybe_html_or_text and ">" in maybe_html_or_text:
+                soup = BeautifulSoup(maybe_html_or_text, "html.parser")
+                return self.clean_text(soup.get_text(separator=" ", strip=True))
+            return self.clean_text(maybe_html_or_text)
+
+        for entry in pages:
+            if not isinstance(entry, dict):
+                continue
+
+            url = entry.get("url", "")
+            page_title = entry.get("page_title", entry.get("title", "")) or ""
+            level = int(entry.get("level", 2))
+
+            # Whole-page content
+            raw_body = (
+                entry.get("text")
+                or entry.get("content")
+                or entry.get("body")
+                or entry.get("markdown")
+                or entry.get("html")
+                or ""
+            )
+            body = extract_text(raw_body)
+
+            # Sectioned content
+            sections = entry.get("sections") if isinstance(entry.get("sections"), list) else []
+
+            # If sections exist, chunk per section; else chunk the whole page
+            if sections:
+                for sec in sections:
+                    if not isinstance(sec, dict):
+                        continue
+                    heading = sec.get("heading", "") or sec.get("title", "")
+                    raw_sec_text = sec.get("text") or sec.get("content") or sec.get("html") or ""
+                    sec_text = extract_text(raw_sec_text)
+                    if not sec_text.strip():
+                        continue
+
+                    chunks = self.chunk_text(
+                        text=sec_text,
+                        url=url,
+                        title=f"{page_title} - {heading}" if page_title and heading and page_title != heading else (page_title or heading),
+                        source_type="website",
+                        heading=heading
+                    )
+                    for c in chunks:
+                        c.update({
+                            "heading_level": int(sec.get("level", level)),
+                            "page_title": page_title,
+                            "original_heading": heading
+                        })
+                    all_chunks.extend(chunks)
+            else:
+                if body.strip():
+                    chunks = self.chunk_text(
+                        text=body,
+                        url=url,
+                        title=page_title or (url or "Website Page"),
+                        source_type="website",
+                        heading=""
+                    )
+                    for c in chunks:
+                        c.update({
+                            "heading_level": level,
+                            "page_title": page_title,
+                            "original_heading": ""
+                        })
+                    all_chunks.extend(chunks)
+
+        return all_chunks
+
 
     def process_blog_json_structured(self, filepath: str) -> List[Dict]:
         """
@@ -206,15 +296,9 @@ class DocumentProcessor:
         )
 
     def process_all_files(self, file_config: Dict[str, str]) -> List[Dict]:
-        """
-        Process multiple files at once
-        file_config format: {'file_path': 'file_type'}
-        """
         all_chunks = []
-        
         for filepath, file_type in file_config.items():
             print(f"Processing {filepath} as {file_type}...")
-            
             try:
                 if file_type == "structured_documentation":
                     chunks = self.process_structured_documentation_json(filepath)
@@ -226,18 +310,21 @@ class DocumentProcessor:
                     chunks = self.process_txt(filepath, filepath, f"Text File: {filepath}")
                 elif file_type == "html":
                     chunks = self.process_html(filepath, filepath, f"HTML File: {filepath}")
+                elif file_type == "website_content":
+                    chunks = self.process_website_content_json(filepath)  # NEW
                 else:
                     print(f"Unknown file type: {file_type} for {filepath}")
                     continue
-                
+
                 all_chunks.extend(chunks)
                 print(f"  -> Generated {len(chunks)} chunks from {filepath}")
-                
             except Exception as e:
                 print(f"Error processing {filepath}: {e}")
                 continue
-        
         return all_chunks
+
+        
+        
 
     def save_chunks(self, chunks: List[Dict], output_file: str = "processed_chunks.json"):
         """Save processed chunks to JSON file"""
@@ -277,7 +364,8 @@ if __name__ == "__main__":
         'data/all_blog_posts_content.json': 'blog_json',
         'data/youtube_videos_with_transcripts.json': 'youtube_json',
         'data/all_documentation_text.txt': 'txt',
-        'data/docs_html_content.html': 'html'
+        'data/docs_html_content.html': 'html',
+        'data/website_content_extracted.json': 'website_content'
     }
     
     # Process all files

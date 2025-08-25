@@ -11,7 +11,7 @@ def setup_qdrant():
     
     # Load embeddings
     embedder = EmbeddingGenerator()
-    chunks, embeddings = embedder.load_embeddings_and_chunks("embeddings_output/")
+    chunks, embeddings = embedder.load_embeddings_and_chunks("../../embeddings_output/")
     
     # Setup Qdrant
     qdrant_manager = QdrantManager(host="localhost", port=6333)
