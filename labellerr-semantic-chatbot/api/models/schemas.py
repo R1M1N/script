@@ -1,9 +1,11 @@
-from pydantic import BaseModel, Field
+# api/models/schemas.py
+from pydantic import BaseModel
 from typing import List, Optional
 
 class ChatRequest(BaseModel):
     message: str
-    context_k: int = Field(5, ge=1, le=20)
+    context_k: int = 5
+    conversation_id: Optional[str] = None
 
 class SearchResultItem(BaseModel):
     title: Optional[str] = None
@@ -16,3 +18,5 @@ class SearchResultItem(BaseModel):
 class ChatResponse(BaseModel):
     response: str
     context_used: List[SearchResultItem] = []
+    conversation_id: Optional[str] = None
+    processing_time_ms: Optional[float] = None

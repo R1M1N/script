@@ -1,0 +1,9 @@
+{
+  "extraction_completed_at": "2025-08-23T06:51:07.745358",
+  "total_videos": 164,
+  "successful_transcripts": 131,
+  "failed_transcripts": 33,
+  "total_transcript_words": 126173,
+  "total_transcript_chunks": 484,
+  "average_words_per_video": 963
+}

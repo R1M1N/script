@@ -1,0 +1,7 @@
+[
+  {
+    "url": "https://docs.labellerr.com/labellerr/documentation-labellerr/actions/actions/start-labelling",
+    "error": "HTTPConnectionPool(host='localhost', port=58379): Read timed out. (read timeout=120)",
+    "timestamp": "2025-08-24T12:05:56.853565"
+  }
+]

@@ -1,0 +1,962 @@
+{
+  "page_info": {
+    "title": "Labellerr Documentation  Labellerr Docs",
+    "description": "Labellerr is a simple and powerful platform for labeling data for AI and machine learning. It helps you annotate images, videos, text, PDFs, and audio",
+    "url": "docs.labellerr.com",
+    "domain": "labellerr",
+    "content_type": "documentation"
+  },
+  "content": [
+    {
+      "id": "section_0",
+      "heading": "Sections",
+      "heading_level": "h2",
+      "content": "",
+      "type": "section"
+    },
+    {
+      "id": "section_1",
+      "heading": "",
+      "heading_level": "h1",
+      "content": "",
+      "type": "section"
+    },
+    {
+      "text": "Getting Started",
+      "url": "/labellerr/documentation-labellerr/getting-started",
+      "type": "navigation"
+    },
+    {
+      "text": "Get Started With Labellerr",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Get Started with Labellerr?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-get-started-with-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create a New project?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-create-a-new-project",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create a Video Annotation Project",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-create-a-video-annotation-project",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create an Audio Project?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-create-an-audio-project",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create a Text Annotation Project?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-create-a-text-annotation-project",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Navigate Dashboard?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-navigate-dashboard",
+      "type": "navigation"
+    },
+    {
+      "text": "Status Bar Elements Guide on Dashbaord",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/status-bar-elements-guide-on-dashbaord",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Connect GCS with Labellerr?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-connect-gcs-with-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Connect AWS S3 with Labellerr?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-connect-aws-s3-with-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "Frequently accessed Tutorials",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials",
+      "type": "navigation"
+    },
+    {
+      "text": "Frequently Accessed Tutorials",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1",
+      "type": "navigation"
+    },
+    {
+      "text": "Workspace",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/workspace",
+      "type": "navigation"
+    },
+    {
+      "text": "Datasets",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/datasets-1",
+      "type": "navigation"
+    },
+    {
+      "text": "Key Definitions of Data Annotation",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/key-definitions-of-data-annotation",
+      "type": "navigation"
+    },
+    {
+      "text": "Labellerr Shortcut Keys Guide",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/labellerr-shortcut-keys-guide",
+      "type": "navigation"
+    },
+    {
+      "text": "Image Editing Icons Guide",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/image-editing-icons-guide",
+      "type": "navigation"
+    },
+    {
+      "text": "User Permission",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/user-permission",
+      "type": "navigation"
+    },
+    {
+      "text": "Importing users from one project to another in the same workspace",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/importing-users-from-one-project-to-another-in-the-same-workspace",
+      "type": "navigation"
+    },
+    {
+      "text": "Feature Demos",
+      "url": "/labellerr/documentation-labellerr/feature-demos",
+      "type": "navigation"
+    },
+    {
+      "text": "Feature Demos",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos",
+      "type": "navigation"
+    },
+    {
+      "text": "Copy from similar images",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/copy-from-similar-images",
+      "type": "navigation"
+    },
+    {
+      "text": "Labellerr Grouping Tool Feature",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/labellerr-grouping-tool-feature",
+      "type": "navigation"
+    },
+    {
+      "text": "Segment Anything",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/segment-anything",
+      "type": "navigation"
+    },
+    {
+      "text": "Image Captioning Using Generative AI",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/image-captioning-using-generative-ai",
+      "type": "navigation"
+    },
+    {
+      "text": "Text Captioning Using Generative AI",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/text-captioning-using-generative-ai",
+      "type": "navigation"
+    },
+    {
+      "text": "Auto Label Jobs by Active Learning",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/auto-label-jobs-by-active-learning",
+      "type": "navigation"
+    },
+    {
+      "text": "Image Similarity",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/image-similarity",
+      "type": "navigation"
+    },
+    {
+      "text": "User Settings Guide",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/user-settings-guide",
+      "type": "navigation"
+    },
+    {
+      "text": "Audio Transcription Using Generative AI",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/audio-transcription-using-generative-ai",
+      "type": "navigation"
+    },
+    {
+      "text": "Audio Segmentation",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/audio-segmentation",
+      "type": "navigation"
+    },
+    {
+      "text": "Interpolation Feature",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/interpolation-feature",
+      "type": "navigation"
+    },
+    {
+      "text": "Magic Editor",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/magic-editor",
+      "type": "navigation"
+    },
+    {
+      "text": "CLIP Mode & Gap Filler",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/clip-mode-and-gap-filler",
+      "type": "navigation"
+    },
+    {
+      "text": "Polygon Eraser",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/polygon-eraser",
+      "type": "navigation"
+    },
+    {
+      "text": "Auto Bordering",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/auto-bordering",
+      "type": "navigation"
+    },
+    {
+      "text": "SAM 2 Object Tracking",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/sam-2-object-tracking",
+      "type": "navigation"
+    },
+    {
+      "text": "Event Tagging",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/event-tagging",
+      "type": "navigation"
+    },
+    {
+      "text": "Smart File Filtering",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/smart-file-filtering",
+      "type": "navigation"
+    },
+    {
+      "text": "Quality Metrics",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/quality-metrics",
+      "type": "navigation"
+    },
+    {
+      "text": "Classification Agent",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/classification-agent",
+      "type": "navigation"
+    },
+    {
+      "text": "Notification Bar",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/notification-bar",
+      "type": "navigation"
+    },
+    {
+      "text": "Natural Language Search",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/natural-language-search",
+      "type": "navigation"
+    },
+    {
+      "text": "Actions",
+      "url": "/labellerr/documentation-labellerr/actions",
+      "type": "navigation"
+    },
+    {
+      "text": "Actions",
+      "url": "/labellerr/documentation-labellerr/actions/actions",
+      "type": "navigation"
+    },
+    {
+      "text": "Start Labelling",
+      "url": "/labellerr/documentation-labellerr/actions/actions/start-labelling",
+      "type": "navigation"
+    },
+    {
+      "text": "Review",
+      "url": "/labellerr/documentation-labellerr/actions/actions/review",
+      "type": "navigation"
+    },
+    {
+      "text": "Client Review",
+      "url": "/labellerr/documentation-labellerr/actions/actions/client-review",
+      "type": "navigation"
+    },
+    {
+      "text": "Client Review using Grid View",
+      "url": "/labellerr/documentation-labellerr/actions/actions/client-review-using-grid-view",
+      "type": "navigation"
+    },
+    {
+      "text": "View On Files Page",
+      "url": "/labellerr/documentation-labellerr/actions/actions/view-on-files-page-1",
+      "type": "navigation"
+    },
+    {
+      "text": "How To Create an Export in Labellerr",
+      "url": "/labellerr/documentation-labellerr/actions/actions/how-to-create-an-export-in-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "Labelling Screen Elements Guide",
+      "url": "/labellerr/documentation-labellerr/actions/actions/labelling-screen-elements-guide",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Use Annotations?",
+      "url": "/labellerr/documentation-labellerr/actions/actions/how-to-use-annotations",
+      "type": "navigation"
+    },
+    {
+      "text": "Image Editing Icons Guide",
+      "url": "/labellerr/documentation-labellerr/actions/actions/image-editing-icons-guide-1",
+      "type": "navigation"
+    },
+    {
+      "text": "Delete, Hide and Unhide Annotations",
+      "url": "/labellerr/documentation-labellerr/actions/actions/delete-hide-and-unhide-annotations",
+      "type": "navigation"
+    },
+    {
+      "text": "Few Additional Features",
+      "url": "/labellerr/documentation-labellerr/few-additional-features",
+      "type": "navigation"
+    },
+    {
+      "text": "Few Additional Features",
+      "url": "/labellerr/documentation-labellerr/few-additional-features/few-additional-features-1",
+      "type": "navigation"
+    },
+    {
+      "text": "Reviewing file level remarks by annotators/reviewers",
+      "url": "/labellerr/documentation-labellerr/few-additional-features/few-additional-features-1/reviewing-file-level-remarks-by-annotators-reviewers",
+      "type": "navigation"
+    },
+    {
+      "text": "Labellerr Workflow Diagram",
+      "url": "/labellerr/documentation-labellerr/few-additional-features/few-additional-features-1/labellerr-workflow-diagram",
+      "type": "navigation"
+    },
+    {
+      "text": "SDK",
+      "url": "/labellerr/documentation-labellerr/sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "SDK Documentation",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation",
+      "type": "navigation"
+    },
+    {
+      "text": "Getting Started with SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/getting-started-with-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create Project Using SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-create-project-using-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "How to add annotation questions?",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-add-annotation-questions",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Upload Preannotation Using SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-upload-preannotation-using-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create an Export Using SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-create-an-export-using-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "Retrieving Projects and Datasets Using SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/retrieving-projects-and-datasets-using-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "Get Started With Labellerr",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Get Started with Labellerr?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-get-started-with-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create a New project?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-create-a-new-project",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create a Video Annotation Project",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-create-a-video-annotation-project",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create an Audio Project?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-create-an-audio-project",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create a Text Annotation Project?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-create-a-text-annotation-project",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Navigate Dashboard?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-navigate-dashboard",
+      "type": "navigation"
+    },
+    {
+      "text": "Status Bar Elements Guide on Dashbaord",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/status-bar-elements-guide-on-dashbaord",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Connect GCS with Labellerr?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-connect-gcs-with-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Connect AWS S3 with Labellerr?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-connect-aws-s3-with-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Get Started with Labellerr?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-get-started-with-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create a New project?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-create-a-new-project",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create a Video Annotation Project",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-create-a-video-annotation-project",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create an Audio Project?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-create-an-audio-project",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create a Text Annotation Project?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-create-a-text-annotation-project",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Navigate Dashboard?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-navigate-dashboard",
+      "type": "navigation"
+    },
+    {
+      "text": "Status Bar Elements Guide on Dashbaord",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/status-bar-elements-guide-on-dashbaord",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Connect GCS with Labellerr?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-connect-gcs-with-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Connect AWS S3 with Labellerr?",
+      "url": "/labellerr/documentation-labellerr/getting-started/get-started-with-labellerr/how-to-connect-aws-s3-with-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "Frequently Accessed Tutorials",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1",
+      "type": "navigation"
+    },
+    {
+      "text": "Workspace",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/workspace",
+      "type": "navigation"
+    },
+    {
+      "text": "Datasets",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/datasets-1",
+      "type": "navigation"
+    },
+    {
+      "text": "Key Definitions of Data Annotation",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/key-definitions-of-data-annotation",
+      "type": "navigation"
+    },
+    {
+      "text": "Labellerr Shortcut Keys Guide",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/labellerr-shortcut-keys-guide",
+      "type": "navigation"
+    },
+    {
+      "text": "Image Editing Icons Guide",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/image-editing-icons-guide",
+      "type": "navigation"
+    },
+    {
+      "text": "User Permission",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/user-permission",
+      "type": "navigation"
+    },
+    {
+      "text": "Importing users from one project to another in the same workspace",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/importing-users-from-one-project-to-another-in-the-same-workspace",
+      "type": "navigation"
+    },
+    {
+      "text": "Workspace",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/workspace",
+      "type": "navigation"
+    },
+    {
+      "text": "Datasets",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/datasets-1",
+      "type": "navigation"
+    },
+    {
+      "text": "Key Definitions of Data Annotation",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/key-definitions-of-data-annotation",
+      "type": "navigation"
+    },
+    {
+      "text": "Labellerr Shortcut Keys Guide",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/labellerr-shortcut-keys-guide",
+      "type": "navigation"
+    },
+    {
+      "text": "Image Editing Icons Guide",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/image-editing-icons-guide",
+      "type": "navigation"
+    },
+    {
+      "text": "User Permission",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/user-permission",
+      "type": "navigation"
+    },
+    {
+      "text": "Importing users from one project to another in the same workspace",
+      "url": "/labellerr/documentation-labellerr/frequently-accessed-tutorials/frequently-accessed-tutorials-1/importing-users-from-one-project-to-another-in-the-same-workspace",
+      "type": "navigation"
+    },
+    {
+      "text": "Feature Demos",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos",
+      "type": "navigation"
+    },
+    {
+      "text": "Copy from similar images",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/copy-from-similar-images",
+      "type": "navigation"
+    },
+    {
+      "text": "Labellerr Grouping Tool Feature",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/labellerr-grouping-tool-feature",
+      "type": "navigation"
+    },
+    {
+      "text": "Segment Anything",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/segment-anything",
+      "type": "navigation"
+    },
+    {
+      "text": "Image Captioning Using Generative AI",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/image-captioning-using-generative-ai",
+      "type": "navigation"
+    },
+    {
+      "text": "Text Captioning Using Generative AI",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/text-captioning-using-generative-ai",
+      "type": "navigation"
+    },
+    {
+      "text": "Auto Label Jobs by Active Learning",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/auto-label-jobs-by-active-learning",
+      "type": "navigation"
+    },
+    {
+      "text": "Image Similarity",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/image-similarity",
+      "type": "navigation"
+    },
+    {
+      "text": "User Settings Guide",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/user-settings-guide",
+      "type": "navigation"
+    },
+    {
+      "text": "Audio Transcription Using Generative AI",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/audio-transcription-using-generative-ai",
+      "type": "navigation"
+    },
+    {
+      "text": "Audio Segmentation",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/audio-segmentation",
+      "type": "navigation"
+    },
+    {
+      "text": "Interpolation Feature",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/interpolation-feature",
+      "type": "navigation"
+    },
+    {
+      "text": "Magic Editor",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/magic-editor",
+      "type": "navigation"
+    },
+    {
+      "text": "CLIP Mode & Gap Filler",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/clip-mode-and-gap-filler",
+      "type": "navigation"
+    },
+    {
+      "text": "Polygon Eraser",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/polygon-eraser",
+      "type": "navigation"
+    },
+    {
+      "text": "Auto Bordering",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/auto-bordering",
+      "type": "navigation"
+    },
+    {
+      "text": "SAM 2 Object Tracking",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/sam-2-object-tracking",
+      "type": "navigation"
+    },
+    {
+      "text": "Event Tagging",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/event-tagging",
+      "type": "navigation"
+    },
+    {
+      "text": "Smart File Filtering",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/smart-file-filtering",
+      "type": "navigation"
+    },
+    {
+      "text": "Quality Metrics",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/quality-metrics",
+      "type": "navigation"
+    },
+    {
+      "text": "Classification Agent",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/classification-agent",
+      "type": "navigation"
+    },
+    {
+      "text": "Notification Bar",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/notification-bar",
+      "type": "navigation"
+    },
+    {
+      "text": "Natural Language Search",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/natural-language-search",
+      "type": "navigation"
+    },
+    {
+      "text": "Copy from similar images",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/copy-from-similar-images",
+      "type": "navigation"
+    },
+    {
+      "text": "Labellerr Grouping Tool Feature",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/labellerr-grouping-tool-feature",
+      "type": "navigation"
+    },
+    {
+      "text": "Segment Anything",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/segment-anything",
+      "type": "navigation"
+    },
+    {
+      "text": "Image Captioning Using Generative AI",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/image-captioning-using-generative-ai",
+      "type": "navigation"
+    },
+    {
+      "text": "Text Captioning Using Generative AI",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/text-captioning-using-generative-ai",
+      "type": "navigation"
+    },
+    {
+      "text": "Auto Label Jobs by Active Learning",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/auto-label-jobs-by-active-learning",
+      "type": "navigation"
+    },
+    {
+      "text": "Image Similarity",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/image-similarity",
+      "type": "navigation"
+    },
+    {
+      "text": "User Settings Guide",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/user-settings-guide",
+      "type": "navigation"
+    },
+    {
+      "text": "Audio Transcription Using Generative AI",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/audio-transcription-using-generative-ai",
+      "type": "navigation"
+    },
+    {
+      "text": "Audio Segmentation",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/audio-segmentation",
+      "type": "navigation"
+    },
+    {
+      "text": "Interpolation Feature",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/interpolation-feature",
+      "type": "navigation"
+    },
+    {
+      "text": "Magic Editor",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/magic-editor",
+      "type": "navigation"
+    },
+    {
+      "text": "CLIP Mode & Gap Filler",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/clip-mode-and-gap-filler",
+      "type": "navigation"
+    },
+    {
+      "text": "Polygon Eraser",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/polygon-eraser",
+      "type": "navigation"
+    },
+    {
+      "text": "Auto Bordering",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/auto-bordering",
+      "type": "navigation"
+    },
+    {
+      "text": "SAM 2 Object Tracking",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/sam-2-object-tracking",
+      "type": "navigation"
+    },
+    {
+      "text": "Event Tagging",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/event-tagging",
+      "type": "navigation"
+    },
+    {
+      "text": "Smart File Filtering",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/smart-file-filtering",
+      "type": "navigation"
+    },
+    {
+      "text": "Quality Metrics",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/quality-metrics",
+      "type": "navigation"
+    },
+    {
+      "text": "Classification Agent",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/classification-agent",
+      "type": "navigation"
+    },
+    {
+      "text": "Notification Bar",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/notification-bar",
+      "type": "navigation"
+    },
+    {
+      "text": "Natural Language Search",
+      "url": "/labellerr/documentation-labellerr/feature-demos/feature-demos/natural-language-search",
+      "type": "navigation"
+    },
+    {
+      "text": "Actions",
+      "url": "/labellerr/documentation-labellerr/actions/actions",
+      "type": "navigation"
+    },
+    {
+      "text": "Start Labelling",
+      "url": "/labellerr/documentation-labellerr/actions/actions/start-labelling",
+      "type": "navigation"
+    },
+    {
+      "text": "Review",
+      "url": "/labellerr/documentation-labellerr/actions/actions/review",
+      "type": "navigation"
+    },
+    {
+      "text": "Client Review",
+      "url": "/labellerr/documentation-labellerr/actions/actions/client-review",
+      "type": "navigation"
+    },
+    {
+      "text": "Client Review using Grid View",
+      "url": "/labellerr/documentation-labellerr/actions/actions/client-review-using-grid-view",
+      "type": "navigation"
+    },
+    {
+      "text": "View On Files Page",
+      "url": "/labellerr/documentation-labellerr/actions/actions/view-on-files-page-1",
+      "type": "navigation"
+    },
+    {
+      "text": "How To Create an Export in Labellerr",
+      "url": "/labellerr/documentation-labellerr/actions/actions/how-to-create-an-export-in-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "Labelling Screen Elements Guide",
+      "url": "/labellerr/documentation-labellerr/actions/actions/labelling-screen-elements-guide",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Use Annotations?",
+      "url": "/labellerr/documentation-labellerr/actions/actions/how-to-use-annotations",
+      "type": "navigation"
+    },
+    {
+      "text": "Image Editing Icons Guide",
+      "url": "/labellerr/documentation-labellerr/actions/actions/image-editing-icons-guide-1",
+      "type": "navigation"
+    },
+    {
+      "text": "Delete, Hide and Unhide Annotations",
+      "url": "/labellerr/documentation-labellerr/actions/actions/delete-hide-and-unhide-annotations",
+      "type": "navigation"
+    },
+    {
+      "text": "Start Labelling",
+      "url": "/labellerr/documentation-labellerr/actions/actions/start-labelling",
+      "type": "navigation"
+    },
+    {
+      "text": "Review",
+      "url": "/labellerr/documentation-labellerr/actions/actions/review",
+      "type": "navigation"
+    },
+    {
+      "text": "Client Review",
+      "url": "/labellerr/documentation-labellerr/actions/actions/client-review",
+      "type": "navigation"
+    },
+    {
+      "text": "Client Review using Grid View",
+      "url": "/labellerr/documentation-labellerr/actions/actions/client-review-using-grid-view",
+      "type": "navigation"
+    },
+    {
+      "text": "View On Files Page",
+      "url": "/labellerr/documentation-labellerr/actions/actions/view-on-files-page-1",
+      "type": "navigation"
+    },
+    {
+      "text": "How To Create an Export in Labellerr",
+      "url": "/labellerr/documentation-labellerr/actions/actions/how-to-create-an-export-in-labellerr",
+      "type": "navigation"
+    },
+    {
+      "text": "Labelling Screen Elements Guide",
+      "url": "/labellerr/documentation-labellerr/actions/actions/labelling-screen-elements-guide",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Use Annotations?",
+      "url": "/labellerr/documentation-labellerr/actions/actions/how-to-use-annotations",
+      "type": "navigation"
+    },
+    {
+      "text": "Image Editing Icons Guide",
+      "url": "/labellerr/documentation-labellerr/actions/actions/image-editing-icons-guide-1",
+      "type": "navigation"
+    },
+    {
+      "text": "Delete, Hide and Unhide Annotations",
+      "url": "/labellerr/documentation-labellerr/actions/actions/delete-hide-and-unhide-annotations",
+      "type": "navigation"
+    },
+    {
+      "text": "Few Additional Features",
+      "url": "/labellerr/documentation-labellerr/few-additional-features/few-additional-features-1",
+      "type": "navigation"
+    },
+    {
+      "text": "Reviewing file level remarks by annotators/reviewers",
+      "url": "/labellerr/documentation-labellerr/few-additional-features/few-additional-features-1/reviewing-file-level-remarks-by-annotators-reviewers",
+      "type": "navigation"
+    },
+    {
+      "text": "Labellerr Workflow Diagram",
+      "url": "/labellerr/documentation-labellerr/few-additional-features/few-additional-features-1/labellerr-workflow-diagram",
+      "type": "navigation"
+    },
+    {
+      "text": "Reviewing file level remarks by annotators/reviewers",
+      "url": "/labellerr/documentation-labellerr/few-additional-features/few-additional-features-1/reviewing-file-level-remarks-by-annotators-reviewers",
+      "type": "navigation"
+    },
+    {
+      "text": "Labellerr Workflow Diagram",
+      "url": "/labellerr/documentation-labellerr/few-additional-features/few-additional-features-1/labellerr-workflow-diagram",
+      "type": "navigation"
+    },
+    {
+      "text": "SDK Documentation",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation",
+      "type": "navigation"
+    },
+    {
+      "text": "Getting Started with SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/getting-started-with-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create Project Using SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-create-project-using-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "How to add annotation questions?",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-add-annotation-questions",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Upload Preannotation Using SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-upload-preannotation-using-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create an Export Using SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-create-an-export-using-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "Retrieving Projects and Datasets Using SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/retrieving-projects-and-datasets-using-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "Getting Started with SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/getting-started-with-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create Project Using SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-create-project-using-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "How to add annotation questions?",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-add-annotation-questions",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Upload Preannotation Using SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-upload-preannotation-using-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "How to Create an Export Using SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-create-an-export-using-sdk",
+      "type": "navigation"
+    },
+    {
+      "text": "Retrieving Projects and Datasets Using SDK",
+      "url": "/labellerr/documentation-labellerr/sdk/sdk-documentation/retrieving-projects-and-datasets-using-sdk",
+      "type": "navigation"
+    }
+  ],
+  "metadata": {
+    "total_sections": 2,
+    "total_code_blocks": 0,
+    "total_tables": 0,
+    "total_paragraphs": 0,
+    "navigation_items": 186
+  }
+}

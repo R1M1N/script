@@ -1,34 +1,32 @@
-from pydantic_settings import BaseSettings, SettingsConfigDict
+# config/settings.py
+import os
+from dotenv import load_dotenv
 
-class Settings(BaseSettings):
-    APP_NAME: str = "labellerr-semantic-chatbot"
-    LOG_LEVEL: str = "INFO"
+load_dotenv()
 
-    HOST: str = "0.0.0.0"
-    PORT: int = 8000
+class Config:
+    # App settings
+    APP_NAME = os.getenv('APP_NAME', 'Labellerr Semantic Chatbot')
+    VERSION = os.getenv('VERSION', '1.0.0')
+    DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
+    SECRET_KEY = os.getenv('SECRET_KEY', 'your-secret-key-here')
+    LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
+    
+    # API settings
+    API_V1_STR = "/api/v1"
+    
+    # Gemini API
+    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+    GEMINI_MODEL = os.getenv('GEMINI_MODEL', 'gemini-2.5-pro')
+    
+    # Qdrant settings
+    QDRANT_HOST = os.getenv('QDRANT_HOST', 'localhost')
+    QDRANT_PORT = int(os.getenv('QDRANT_PORT', 6333))
+    QDRANT_API_KEY = os.getenv('QDRANT_API_KEY')
+    
+    # Embedding settings
+    EMBEDDING_MODEL = os.getenv('EMBEDDING_MODEL', 'all-mpnet-base-v2')
+    MAX_CHUNK_SIZE = int(os.getenv('MAX_CHUNK_SIZE', 800))
+    CHUNK_OVERLAP = int(os.getenv('CHUNK_OVERLAP', 100))
 
-    # Embeddings
-    EMBEDDING_MODEL_NAME: str = "all-MiniLM-L6-v2"
-    EMBEDDING_DEVICE: str = "cpu"
-    NORMALIZE_EMBEDDINGS: bool = True
-
-    # Vector DB (default to Chroma; you can switch to Qdrant later)
-    CHROMA_DIR: str = "./data_ingest/vector_db"
-    CHROMA_COLLECTION: str = "labellerr_content_minilm"
-
-    # Qdrant
-    QDRANT_HOST: str = "localhost"
-    QDRANT_PORT: int = 6333
-    QDRANT_COLLECTION: str = "updates_minilm"
-
-    # RAG
-    RAG_TOP_K: int = 5
-    RAG_MAX_CONTEXT_CHARS: int = 1200
-
-    # Gemini
-    GOOGLE_API_KEY: str = ""
-    GEMINI_MODEL: str = "gemini-2.5-pro"
-
-    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
-
-settings = Settings()
+settings = Config()

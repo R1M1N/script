@@ -1,49 +1,92 @@
-# Updated api/main.py with search and RAG endpoints
+# Updated api/main.py with proper initialization
+
 import logging
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
 import time
 import uuid
-from typing import List
+from typing import List, Optional
+
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
+import google.generativeai as genai
 
 from config.settings import settings
 from api.models.schemas import ChatRequest, ChatResponse, SearchResultItem
-from api.embedding_service import embedding_service
-from api.qdrant_service import qdrant_service
-from api.llm_service import llm_service
+from api.embedding_service import EmbeddingGenerator
+from api.qdrant_service import QdrantManager
+from api.llm_service import LabellerrRAGChatbot
 from api.query_parser import parse_temporal_query, extract_keywords
 
-logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL.upper(), logging.INFO),
-                    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s")
-
+# Configure logging
+logging.basicConfig(
+    level=getattr(logging, settings.LOG_LEVEL.upper(), logging.INFO),
+    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+)
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title=settings.APP_NAME)
+# Initialize FastAPI app
+app = FastAPI(title=settings.APP_NAME, version=settings.VERSION)
+app.mount("/app", StaticFiles(directory="frontend", html=True), name="app")
 
+# Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], allow_credentials=True,
-    allow_methods=["*"], allow_headers=["*"],
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
-@app.get("/health")
-async def health():
-    try:
-        dim = embedding_service.embedding_dimension()
-        count = await qdrant_service.count()
-    except Exception:
-        dim = None
-        count = 0
+# Global service variables
+embedding_service = None
+qdrant_service = None
+llm_service = None
+chatbot = None
+
+@app.on_event("startup")
+async def startup_event():
+    """Initialize services on startup"""
+    global embedding_service, qdrant_service, llm_service, chatbot
     
+    try:
+        logger.info("Initializing services...")
+        
+        # Configure Gemini
+        genai.configure(api_key=settings.GEMINI_API_KEY)
+        
+        # Initialize services
+        embedding_service = EmbeddingGenerator(model_name=settings.EMBEDDING_MODEL)
+        qdrant_service = QdrantManager(host=settings.QDRANT_HOST, port=settings.QDRANT_PORT)
+        
+        # Initialize chatbot
+        chatbot = LabellerrRAGChatbot(
+            qdrant_manager=qdrant_service,
+            embedding_generator=embedding_service,
+            gemini_api_key=settings.GEMINI_API_KEY,
+            model="gemini-2.5-pro" 
+        )
+        
+        logger.info("✅ Services initialized successfully")
+        
+    except Exception as e:
+        logger.error(f"❌ Failed to initialize services: {e}")
+        raise
+
+@app.get("/health")
+async def health_check():
+    """Health check endpoint"""
     return {
-        "status": "ok",
-        "embedding_model": settings.EMBEDDING_MODEL_NAME,
-        "embedding_dimension": dim,
-        "vector_db": {
-            "chroma_collection": settings.CHROMA_COLLECTION,
-            "qdrant_collection": settings.QDRANT_COLLECTION,
-            "qdrant_points": count
-        }
+        "status": "healthy",
+        "app_name": settings.APP_NAME,
+        "version": settings.VERSION,
+        "embedding_model": settings.EMBEDDING_MODEL,
+        "qdrant_host": settings.QDRANT_HOST,
+        "debug_mode": settings.DEBUG,
+        "services_initialized": chatbot is not None
     }
 
 @app.get("/search", response_model=List[SearchResultItem])
@@ -52,122 +95,107 @@ async def search_endpoint(
     k: int = Query(8, ge=1, le=20, description="Number of results")
 ):
     """Search-only endpoint for debugging retrieval"""
+    if not chatbot:
+        raise HTTPException(status_code=503, detail="Services not initialized")
+    
     try:
-        # Parse query for filters
-        temporal_info = parse_temporal_query(q)
-        keywords = extract_keywords(q)
+        logger.info(f"Search query: '{q}' with k={k}")
         
-        # Embed query
-        query_embedding = await embedding_service.embed_text(q)
+        # Use chatbot's retrieve_context method
+        context = chatbot.retrieve_context(q, k)
         
-        # Search with filters
-        results = await qdrant_service.search(
-            query_embedding=query_embedding,
-            top_k=k,
-            month=temporal_info.get("month"),
-            keywords=keywords if keywords else None
-        )
-        
-        # If no results with filters, try without filters
-        if not results:
-            logger.info("No results with filters, trying without filters...")
-            results = await qdrant_service.search(query_embedding=query_embedding, top_k=k)
+        # Convert to SearchResultItem format
+        results = []
+        for ctx in context:
+            result = SearchResultItem(
+                title=ctx.get('title'),
+                url=ctx.get('url'),
+                content=ctx.get('text', ''),
+                distance=1.0 - ctx.get('score', 0.0),  # Convert similarity to distance
+                source_file=ctx.get('source_type'),
+                chunk_id=ctx.get('id')
+            )
+            results.append(result)
         
         logger.info(f"Search '{q}' returned {len(results)} results")
         return results
         
     except Exception as e:
         logger.exception(f"Search failed: {e}")
-        raise HTTPException(status_code=500, detail=f"Search failed: {e}")
+        raise HTTPException(status_code=500, detail=f"Search failed: {str(e)}")
 
-def _trim(text: str, max_chars: int) -> str:
+def _trim(text: str, max_chars: int = 1000) -> str:
+    """Trim text to max_chars"""
     if not text or len(text) <= max_chars:
         return text
     return text[:max_chars-3] + "..."
 
-def _build_prompt(question: str, contexts: List[SearchResultItem]) -> tuple[str, str]:
-    blocks = []
-    for i, c in enumerate(contexts, start=1):
-        title = c.title or c.url or c.source_file or f"Snippet {i}"
-        snippet = _trim(c.content, settings.RAG_MAX_CONTEXT_CHARS)
-        src_line = f"Source {i}: {title}"
-        if c.url:
-            src_line += f" ({c.url})"
-        blocks.append(f"{src_line}\n{snippet}".strip())
-    
-    context_text = "\n\n".join(blocks) if blocks else "No external context retrieved."
-    
-    system = (
-        "You are a precise, helpful assistant. Use only the provided sources to answer. "
-        "If the answer is not contained in the sources, say you don't know. "
-        "Cite the sources used under 'Sources:' at the end."
-    )
-    
-    prompt = (
-        f"Context:\n{context_text}\n\n"
-        f"User question: {question}\n\n"
-        f"Instructions:\n"
-        f"- Base the answer strictly on the Context above.\n"
-        f"- Be concise and factual.\n"
-        f"- Include a 'Sources:' section listing the specific sources used.\n"
-        f"Answer:"
-    )
-    
-    return system, prompt
-
 @app.post("/rag", response_model=ChatResponse)
 async def rag_endpoint(request: ChatRequest) -> ChatResponse:
+    """RAG endpoint for chat functionality"""
+    if not chatbot:
+        raise HTTPException(status_code=503, detail="Services not initialized")
+    
     start_time = time.time()
-    conversation_id = request.conversation_id or str(uuid.uuid4())
+    conversation_id = getattr(request, 'conversation_id', None) or str(uuid.uuid4())
     
     logger.info(f"[RAG] qid={conversation_id} | msg='{request.message[:80]}' | k={request.context_k}")
     
     try:
-        # Parse query for filters
-        temporal_info = parse_temporal_query(request.message)
-        keywords = extract_keywords(request.message)
+        # Use the chatbot's chat method
+        result = chatbot.chat(request.message, top_k=request.context_k)
         
-        # Embed query
-        query_embedding = await embedding_service.embed_text(request.message)
-        
-        # Smart retrieval with filters
-        contexts = await qdrant_service.search(
-            query_embedding=query_embedding,
-            top_k=request.context_k,
-            month=temporal_info.get("month"),
-            keywords=keywords if keywords else None
-        )
-        
-        # If no results with filters, try without filters
-        if not contexts:
-            logger.info("No results with filters, trying without filters...")
-            contexts = await qdrant_service.search(
-                query_embedding=query_embedding, 
-                top_k=request.context_k
+        # Convert context to SearchResultItem format with ACTUAL content
+        context_used = []
+        for source in result.get('sources', []):
+            # Get the actual text from the original context
+            actual_text = source.get('text', '')  # This should contain the actual content
+            
+            item = SearchResultItem(
+                title=source.get('title'),
+                url=source.get('url'),
+                content=actual_text[:1000],  # First 1000 chars of actual content
+                distance=1.0 - source.get('score', 0.0),
+                source_file=source.get('source_type'),
+                chunk_id=source.get('id')
             )
-        
-        # Build prompt and generate
-        system_instruction, prompt = _build_prompt(request.message, contexts)
-        answer = await llm_service.generate(
-            prompt=prompt,
-            system_instruction=system_instruction
-        )
+            context_used.append(item)
         
         processing_time = round((time.time() - start_time) * 1000.0, 2)
         
-        logger.info(f"[RAG] qid={conversation_id} | retrieved={len(contexts)} | {processing_time}ms")
+        logger.info(f"[RAG] qid={conversation_id} | retrieved={len(context_used)} | {processing_time}ms")
         
         return ChatResponse(
-            response=answer,
-            context_used=contexts,
+            response=result['response'],
+            context_used=context_used,
             conversation_id=conversation_id,
             processing_time_ms=processing_time
         )
         
     except Exception as e:
         logger.exception(f"[RAG] qid={conversation_id} failed: {e}")
-        raise HTTPException(status_code=500, detail=f"RAG failed: {e}")
+        raise HTTPException(status_code=500, detail=f"RAG failed: {str(e)}")
+
 
 @app.get("/")
 async def root():
-    return {"name": settings.APP_NAME, "status": "ok"}
+    """Root endpoint"""
+    return {
+        "name": settings.APP_NAME, 
+        "status": "ok",
+        "endpoints": {
+            "health": "/health",
+            "search": "/search",
+            "chat": "/rag",
+            "docs": "/docs"
+        }
+    }
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(
+        "main:app",
+        host="0.0.0.0",
+        port=8000,
+        reload=settings.DEBUG
+    )

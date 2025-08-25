@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Labellerr Chatbot</title>
+  <!-- Tailwind Play CDN (great for quick prototypes) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT: "#0ea5e9", dark: "#0284c7" }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <div class="min-h-screen grid grid-rows-[auto,1fr,auto]">
+    <!-- Header -->
+    <header class="border-b bg-white/80 backdrop-blur sticky top-0 z-10">
+      <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="h-9 w-9 rounded-lg bg-brand/10 flex items-center justify-center text-brand font-bold">L</div>
+          <div>
+            <h1 class="text-lg font-semibold">Labellerr Documentation Chat</h1>
+            <p class="text-xs text-slate-500">Ask about features, workflows, SDK, exports, and more</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span id="statusBadge" class="text-xs px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">Connected</span>
+          <button id="themeBtn" class="text-xs px-3 py-1.5 rounded-md border bg-white hover:bg-slate-50">Toggle Theme</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Chat area -->
+    <main class="max-w-5xl mx-auto w-full px-4 py-6">
+      <div id="messages" class="bg-white rounded-xl border shadow-sm p-4 h-[72vh] overflow-y-auto space-y-4">
+        <!-- Messages injected here -->
+      </div>
+    </main>
+
+    <!-- Composer -->
+    <footer class="border-t bg-white">
+      <div class="max-w-5xl mx-auto w-full px-4 py-4">
+        <div class="rounded-xl border bg-white shadow-sm p-2 flex items-end gap-2">
+          <textarea id="input" rows="2" placeholder="Ask anything about Labellerr..." class="flex-1 resize-none outline-none p-3 rounded-md"></textarea>
+          <div class="flex items-center gap-2">
+            <select id="topK" class="text-sm border rounded-md px-2 py-1">
+              <option value="3">k=3</option>
+              <option value="5" selected>k=5</option>
+              <option value="8">k=8</option>
+            </select>
+            <button id="send" class="bg-brand hover:bg-brand-dark text-white text-sm px-4 py-2 rounded-md">Send</button>
+          </div>
+        </div>
+        <p class="text-[11px] text-slate-500 mt-2">Responses cite retrieved sources when available.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/app/app.js"></script>
+</body>
+</html>

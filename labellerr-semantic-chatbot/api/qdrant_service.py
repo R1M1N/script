@@ -1,89 +1,135 @@
-# api/qdrant_service.py
-import logging
-from typing import List, Optional
 from qdrant_client import QdrantClient
-from qdrant_client.http.models import Filter, FieldCondition, MatchValue, Should, Must
+from qdrant_client.models import Distance, VectorParams, PointStruct, Filter, FieldCondition, MatchValue
+import uuid
 import numpy as np
+from typing import List, Dict, Any, Optional
+import json
 
-from config.settings import settings
-from api.models.schemas import SearchResultItem
-
-logger = logging.getLogger(__name__)
-
-class QdrantService:
-    def __init__(self):
-        self.client = QdrantClient(host=settings.QDRANT_HOST, port=settings.QDRANT_PORT)
-        self.collection_name = settings.QDRANT_COLLECTION
-        logger.info(f"Initialized Qdrant client: {self.collection_name}")
-
-    async def search(
-        self, 
-        query_embedding: np.ndarray | List[float], 
-        top_k: int = 8,
-        month: Optional[str] = None,
-        keywords: Optional[List[str]] = None,
-        min_score: float = 0.0
-    ) -> List[SearchResultItem]:
+class QdrantManager:
+    def __init__(self, host: str = "localhost", port: int = 6333, api_key: str = None):
+        """
+        Initialize Qdrant client
         
-        if isinstance(query_embedding, np.ndarray):
-            query_embedding = query_embedding.tolist()
+        Args:
+            host: Qdrant server host
+            port: Qdrant server port
+            api_key: API key for Qdrant Cloud (optional)
+        """
+        if api_key:
+            self.client = QdrantClient(url=f"https://{host}", api_key=api_key)
+        else:
+            self.client = QdrantClient(host=host, port=port)
         
-        # Build filters
-        query_filter = None
-        if month or keywords:
-            must_conditions = []
-            should_conditions = []
-            
-            if month:
-                must_conditions.append(FieldCondition(key="month", match=MatchValue(value=month)))
-            
-            if keywords:
-                for keyword in keywords:
-                    should_conditions.extend([
-                        FieldCondition(key="title", match=MatchValue(value=keyword)),
-                        FieldCondition(key="tags", match=MatchValue(value=keyword))
-                    ])
-            
-            if must_conditions or should_conditions:
-                query_filter = Filter(
-                    must=must_conditions if must_conditions else None,
-                    should=should_conditions if should_conditions else None
-                )
+        self.collection_name = "labellerr_knowledge_base"
+        print(f"Connected to Qdrant at {host}:{port}")
+    
+    def create_collection(self, vector_size: int = 768, distance: Distance = Distance.COSINE):
+        """
+        Create collection for storing embeddings
         
+        Args:
+            vector_size: Dimension of embeddings (768 for all-mpnet-base-v2, 384 for all-MiniLM-L6-v2)
+            distance: Distance metric for similarity search
+        """
         try:
-            # Search
-            results = self.client.search(
-                collection_name=self.collection_name,
-                query_vector=query_embedding,
-                query_filter=query_filter,
-                limit=top_k,
-                with_payload=True,
-                score_threshold=min_score
+            # Delete collection if exists
+            self.client.delete_collection(collection_name=self.collection_name)
+            print(f"Deleted existing collection: {self.collection_name}")
+        except:
+            pass
+        
+        # Create new collection
+        self.client.create_collection(
+            collection_name=self.collection_name,
+            vectors_config=VectorParams(size=vector_size, distance=distance)
+        )
+        print(f"Created collection: {self.collection_name} with vector size: {vector_size}")
+    
+    def store_chunks_with_embeddings(self, chunks: List[Dict], embeddings: np.ndarray):
+        """
+        Store chunks and their embeddings in Qdrant
+        
+        Args:
+            chunks: List of chunk dictionaries with metadata
+            embeddings: Numpy array of embeddings
+        """
+        points = []
+        
+        for i, (chunk, embedding) in enumerate(zip(chunks, embeddings)):
+            point = PointStruct(
+                id=str(uuid.uuid4()),
+                vector=embedding.tolist(),
+                payload={
+                    'chunk_id': chunk.get('id', f"chunk_{i}"),
+                    'text': chunk.get('text', ''),
+                    'title': chunk.get('title', ''),
+                    'url': chunk.get('url', ''),
+                    'heading': chunk.get('heading', ''),
+                    'source_type': chunk.get('source_type', 'unknown'),
+                    'chunk_index': chunk.get('chunk_index', 0),
+                    'page_title': chunk.get('page_title', ''),
+                    'heading_level': chunk.get('heading_level', 0),
+                    'embedding_model': chunk.get('embedding_model', ''),
+                    'char_count': len(chunk.get('text', '')),
+                    'word_count': len(chunk.get('text', '').split())
+                }
             )
-            
-            # Convert to SearchResultItem
-            items = []
-            for hit in results:
-                payload = hit.payload or {}
-                items.append(SearchResultItem(
-                    title=payload.get("title"),
-                    url=payload.get("url"),
-                    content=payload.get("text", ""),
-                    distance=1.0 - hit.score,  # Convert similarity to distance
-                    source_file=payload.get("source_file"),
-                    chunk_id=str(payload.get("chunk_id", ""))
-                ))
-            
-            return items
-        except Exception as e:
-            logger.error(f"Qdrant search failed: {e}")
-            return []
-
-    async def count(self) -> int:
+            points.append(point)
+        
+        # Upload points in batches
+        batch_size = 100
+        for i in range(0, len(points), batch_size):
+            batch = points[i:i + batch_size]
+            self.client.upsert(
+                collection_name=self.collection_name,
+                points=batch
+            )
+            print(f"Uploaded batch {i//batch_size + 1}/{(len(points) + batch_size - 1)//batch_size}")
+        
+        print(f"Successfully stored {len(points)} chunks in Qdrant")
+    
+    def search_similar(self, query_embedding: np.ndarray, limit: int = 5, 
+                      source_filter: Optional[str] = None, min_score: float = 0.0):
+        """
+        Search for similar chunks
+        
+        Args:
+            query_embedding: Query vector
+            limit: Number of results to return
+            source_filter: Filter by source type (e.g., 'documentation', 'blog', 'youtube')
+            min_score: Minimum similarity score
+        """
+        search_filter = None
+        if source_filter:
+            search_filter = Filter(
+                must=[
+                    FieldCondition(
+                        key="source_type",
+                        match=MatchValue(value=source_filter)
+                    )
+                ]
+            )
+        
+        search_result = self.client.search(
+            collection_name=self.collection_name,
+            query_vector=query_embedding.tolist(),
+            query_filter=search_filter,
+            limit=limit,
+            score_threshold=min_score
+        )
+        
+        return search_result
+    
+    def get_collection_info(self):
+        """Get information about the collection"""
         try:
             info = self.client.get_collection(self.collection_name)
-            return info.points_count
-        except Exception:
-            return 0
-
-qdrant_service = QdrantService()
+            return {
+                'status': info.status,
+                'vectors_count': info.vectors_count,
+                'segments_count': info.segments_count,
+                'disk_data_size': info.disk_data_size,
+                'ram_data_size': info.ram_data_size
+            }
+        except Exception as e:
+            return {'error': str(e)}

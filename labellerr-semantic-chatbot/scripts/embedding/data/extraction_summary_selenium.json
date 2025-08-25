@@ -1,0 +1,68 @@
+{
+  "extraction_completed_at": "2025-08-24T12:22:07.448931",
+  "total_pages_discovered": 69,
+  "total_sections_extracted": 9039,
+  "failed_extractions": 1,
+  "total_words": 531581,
+  "total_chunks": 7581,
+  "average_words_per_section": 58,
+  "sections_by_level": {
+    "h2": 2328,
+    "h1": 1278,
+    "h3": 4631,
+    "h4": 248,
+    "h6": 554
+  },
+  "top_sections_by_content": [
+    {
+      "heading": "Glossary (JSON Key Explanations)",
+      "word_count": 1851,
+      "url": "https://docs.labellerr.com/labellerr/documentation-labellerr/sdk/sdk-documentation"
+    },
+    {
+      "heading": "Glossary (JSON Key Explanations)",
+      "word_count": 1851,
+      "url": "https://docs.labellerr.com/labellerr/documentation-labellerr/sdk/sdk-documentation/getting-started-with-sdk"
+    },
+    {
+      "heading": "Glossary (JSON Key Explanations)",
+      "word_count": 1851,
+      "url": "https://docs.labellerr.com/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-add-annotation-questions"
+    },
+    {
+      "heading": "Glossary (JSON Key Explanations)",
+      "word_count": 1851,
+      "url": "https://docs.labellerr.com/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-add-annotation-questions-how-to-create-project-using-sdk"
+    },
+    {
+      "heading": "Glossary (JSON Key Explanations)",
+      "word_count": 1851,
+      "url": "https://docs.labellerr.com/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-create-an-export-using-sdk"
+    },
+    {
+      "heading": "Glossary (JSON Key Explanations)",
+      "word_count": 1851,
+      "url": "https://docs.labellerr.com/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-create-project-using-sdk"
+    },
+    {
+      "heading": "Glossary (JSON Key Explanations)",
+      "word_count": 1851,
+      "url": "https://docs.labellerr.com/labellerr/documentation-labellerr/sdk/sdk-documentation/how-to-upload-preannotation-using-sdk"
+    },
+    {
+      "heading": "Glossary (JSON Key Explanations)",
+      "word_count": 1851,
+      "url": "https://docs.labellerr.com/labellerr/documentation-labellerr/sdk/sdk-documentation/retrieving-projects-and-datasets-using-sdk"
+    },
+    {
+      "heading": "Similar Images",
+      "word_count": 1073,
+      "url": "https://docs.labellerr.com/labellerr/documentation-labellerr/feature-demos"
+    },
+    {
+      "heading": "Similar Images",
+      "word_count": 1073,
+      "url": "https://docs.labellerr.com/labellerr/documentation-labellerr/feature-demos/feature-demos"
+    }
+  ]
+}

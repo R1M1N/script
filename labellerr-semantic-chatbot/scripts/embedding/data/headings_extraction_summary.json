@@ -1,0 +1,83 @@
+{
+  "extraction_date": "2025-08-23T17:03:59.215478",
+  "total_headings": 8410,
+  "heading_levels": {
+    "h2": 2251,
+    "h1": 1271,
+    "h3": 4645,
+    "h4": 243
+  },
+  "pages_processed": 69,
+  "sample_headings": [
+    {
+      "heading": "Sections",
+      "level": 2,
+      "url": "https://docs.labellerr.com/",
+      "page_url": "https://docs.labellerr.com/",
+      "heading_tag": "h2"
+    },
+    {
+      "heading": "Get Started With Labellerr",
+      "level": 1,
+      "url": "https://docs.labellerr.com/",
+      "page_url": "https://docs.labellerr.com/",
+      "heading_tag": "h1"
+    },
+    {
+      "heading": "How to Get Started with Labellerr?",
+      "level": 3,
+      "url": "https://docs.labellerr.com/",
+      "page_url": "https://docs.labellerr.com/",
+      "heading_tag": "h3"
+    },
+    {
+      "heading": "How to Create a New project?",
+      "level": 3,
+      "url": "https://docs.labellerr.com/",
+      "page_url": "https://docs.labellerr.com/",
+      "heading_tag": "h3"
+    },
+    {
+      "heading": "How to Navigate Dashboard?",
+      "level": 3,
+      "url": "https://docs.labellerr.com/",
+      "page_url": "https://docs.labellerr.com/",
+      "heading_tag": "h3"
+    },
+    {
+      "heading": "Frequently Accessed Tutorials",
+      "level": 1,
+      "url": "https://docs.labellerr.com/",
+      "page_url": "https://docs.labellerr.com/",
+      "heading_tag": "h1"
+    },
+    {
+      "heading": "Workspace",
+      "level": 3,
+      "url": "https://docs.labellerr.com/",
+      "page_url": "https://docs.labellerr.com/",
+      "heading_tag": "h3"
+    },
+    {
+      "heading": "Datasets",
+      "level": 3,
+      "url": "https://docs.labellerr.com/",
+      "page_url": "https://docs.labellerr.com/",
+      "heading_tag": "h3"
+    },
+    {
+      "heading": "Key Definitions in Data Annotation",
+      "level": 3,
+      "url": "https://docs.labellerr.com/",
+      "page_url": "https://docs.labellerr.com/",
+      "heading_tag": "h3"
+    },
+    {
+      "heading": "Labellerr Shortcut Keys Guide",
+      "level": 3,
+      "url": "https://docs.labellerr.com/",
+      "page_url": "https://docs.labellerr.com/",
+      "heading_tag": "h3"
+    }
+  ]
+}
